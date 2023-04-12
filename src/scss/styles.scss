@@ -1,6 +1,31 @@
+@import '_variables';
 body {
-  background: peru;
-  a {
-    color: blue;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+}
+.header {
+  width: 33%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: $red;
+  justify-content: space-between;
+  position: fixed;
+  margin-left: 100px;
+
+  .header_title {
+    font-size: 4.5rem;
+    font-weight: lighter;
+  }
+  .header_info_nav > a {
+    color: #7883b6;
+    &:hover {
+      color: black;
+      font-weight: bolder;
+    }
+  }
+  .header_info_byline {
+    font-size: 11px;
+    color: #7883b6;
   }
 }
