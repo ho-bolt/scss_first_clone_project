@@ -11,11 +11,22 @@ body {
   color: $red;
   justify-content: space-between;
   position: fixed;
-  margin-left: 100px;
-
+  .header_gr {
+    padding-left: 72px;
+    padding-top: 70px;
+  }
   .header_title {
     font-size: 4.5rem;
     font-weight: lighter;
+  }
+  .header_info {
+    padding: 72px;
+  }
+  .header_info_content p:first-child {
+    font-size: 1.6rem;
+  }
+  .header_info_content p:nth-child(2) {
+    font-size: 1rem;
   }
   .header_info_nav > a {
     color: #7883b6;
