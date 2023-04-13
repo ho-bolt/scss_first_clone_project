@@ -1,10 +1,16 @@
 @import '_variables';
+@import '_reset.scss';
 body {
   font-family: 'Rubik', sans-serif;
   font-family: 'Ubuntu', sans-serif;
+  overflow-x: hidden;
+}
+* {
+  box-sizing: border-box;
 }
 .header {
   width: 33%;
+
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,6 +25,10 @@ body {
     font-size: 4.5rem;
     font-weight: lighter;
   }
+  .header_info_content > p {
+    margin-bottom: 20px;
+  }
+
   .header_info {
     padding: 72px;
   }
@@ -28,15 +38,75 @@ body {
   .header_info_content p:nth-child(2) {
     font-size: 1rem;
   }
+
   .header_info_nav > a {
     color: #7883b6;
+    width: 100%;
     &:hover {
       color: black;
       font-weight: bolder;
     }
+    margin-right: 10px;
   }
   .header_info_byline {
+    margin-top: 20px;
     font-size: 11px;
     color: #7883b6;
+  }
+}
+.intro {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  color: $white;
+  font-size: 1.7rem;
+  position: sticky;
+  top: 0;
+  background-color: $red;
+  margin-left: 627.66px;
+  display: flex;
+  height: 140px;
+  justify-content: center;
+  align-items: center;
+}
+.movies {
+  top: 0px;
+  background: $red;
+  color: $white;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+  width: 67%;
+  margin-left: 627.66px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .movies_header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+  .movies_header > h2 {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .movies_director {
+    margin-top: 18px;
+    font-weight: bold;
+  }
+  .movies_movie {
+    width: 990px;
+    height: 555px;
+  }
+  .movies_content {
+    padding: 48px;
+  }
+  .movies_thoughts {
+    display: flex;
+    justify-content: flex-end;
+  }
+  img {
+    width: 100%;
+    height: 100%;
   }
 }
